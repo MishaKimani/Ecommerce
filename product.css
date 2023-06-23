@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.body{
+    width: 100vw;
+    padding: 10px 10px;
+}
+
+.container{
+    >*{
+        margin: 10px 10px;
+    }
+}
+
+.remove{
+    border: none;
+    width: 150px;
+    height: 30px;
+    color: purple;
+}
+
+.rest{
+    display: flex;
+}
+
+.all{
+    margin: 10px 10px;
+    width: 40%;
+
+    .top{
+        height: 50px;
+        background-color: grey;
+        font-size: 40px;
+        font-style: oblique;
+    }
+}
+
+.blank{
+    width: 20%;
+    
+}
+
+.total{
+    width: 40%;
+}
+
+.image{
+    width: 200px;
+    height: 200px;
+}
