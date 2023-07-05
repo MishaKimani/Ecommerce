@@ -17,5 +17,6 @@
 <li>HTML-Markup language used to organise the website</li>
 <li>CSS-Used for styling</li>
 <li>JavaScript-Provides functionality to the site</li>
+<li>Vercel-Cloud plaform for static sites used for deploment</li>
 
 </ol>
