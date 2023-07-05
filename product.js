@@ -1,6 +1,8 @@
 const container=document.querySelector('.container')
 const remove=document.querySelector('.remove')
 const total=document.querySelector('.total')
+const checkout=document.querySelector('.checkout')
+const clear=document.querySelector('.clear')
 
 const getItem=localStorage.getItem('cartItems')
 const goods=JSON.parse(getItem)
@@ -24,7 +26,8 @@ goods.forEach((name,index)=>{
     `
     
     sum += name.price
-    total.innerHTML= `Total: $${sum}`
+    total.innerHTML= `SumTotal:  $${sum}`
+    checkout.innerHTML=`Checkout   $${sum}`
 
 
 container.appendChild(carrier)
@@ -39,5 +42,10 @@ remove.addEventListener('click', ()=>{
     
 })
 
+clear.addEventListener('click', ()=>{
+        goods.splice(0,goods.length)
+        localStorage.removeItem('cartItems')
+        window.location.reload()
+})
 
 

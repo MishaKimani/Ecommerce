@@ -176,3 +176,6 @@ toggle.addEventListener('click',(e)=>{
     }
 })
 
+signin.addEventListener('click' ,()=>{
+    window.open('./account.html')
+})

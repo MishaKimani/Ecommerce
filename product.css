@@ -6,12 +6,14 @@
 
 .body{
     width: 100vw;
-    padding: 10px 10px;
+    padding: 20px 20px;
+    background-color: black;
+    overflow-x: hidden;
 }
 
 .container{
     >*{
-        margin: 10px 10px;
+        margin: 5px 5px;
     }
 }
 
@@ -35,6 +37,9 @@
         background-color: grey;
         font-size: 40px;
         font-style: oblique;
+        border-radius: 5px;
+        margin: 0 10px 0 10px;
+
     }
 }
 
@@ -43,11 +48,67 @@
     
 }
 
-.total{
+.totalgroup{
     width: 40%;
+    color: antiquewhite;
+    height: 300px;
+    margin: 10px 0px 10px 0px;
+    border-radius: 5px;
+    border: 2px solid purple;
+
+    >*{
+        display: flex;
+        margin: 15px 0px 15px 0px;
+    }
+
+
+    .returns{
+        
+        display: flex;
+        flex-direction: column;
+    }
+
+    .checkout{
+        background-color: grey;
+        width: 100%;
+        height: 30px;
+        border-radius: 5px;
+    }
+
+    .clear{
+        background-color: grey;
+        width: 40%;
+        height: 30px;
+        border-radius: 5px;
+    }
 }
 
 .image{
     width: 200px;
     height: 200px;
+}
+
+.carrier{
+    color: antiquewhite;
+    margin: 10px 10px;
+    border: 2px solid purple;
+
+    >*{
+        margin: 5px;
+    }
+}
+
+.back{
+    background-color: grey;
+    border: 1px solid purple;
+    border-radius: 3px;
+    height: 20px;
+    >*{text-decoration: none;
+        color: black;}
+    
+}
+
+.backbutton{
+    display: flex;
+    justify-content: flex-end;
 }
